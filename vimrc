@@ -60,5 +60,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+nnoremap gk :bn<CR>
+nnoremap gj :bp<CR>
+nnoremap gd :bd<CR>
+
 " Plugin Mappings
 nnoremap <Leader>n :NERDTreeTabsToggle<CR>
