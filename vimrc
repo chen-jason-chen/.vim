@@ -20,6 +20,7 @@ set number
 set relativenumber
 set so=999 " fix cursor to centre of screen
 
+set backspace=indent,eol,start
 set tabstop=4 
 set shiftwidth=4
 set softtabstop=4
