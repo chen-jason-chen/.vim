@@ -1,6 +1,3 @@
-[submodule "bundle/fonts"]
-	path = bundle/fonts
-	url = https://github.com/powerline/fonts.git
 [submodule "bundle/Stupid-EasyMotion"]
 	path = bundle/Stupid-EasyMotion
 	url = https://github.com/joequery/Stupid-EasyMotion.git
