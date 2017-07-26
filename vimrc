@@ -39,7 +39,6 @@ let g:loaded_youcompleteme=1
 
 " Aesthetics
 
-colorscheme peachpuff
 hi LineNr ctermfg=DarkGrey
 hi MatchParen cterm=none ctermbg=18 ctermfg=blue
 hi VertSplit ctermbg=236 ctermfg=236
