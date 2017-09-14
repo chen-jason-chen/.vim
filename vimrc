@@ -49,12 +49,6 @@ hi SpellBad ctermbg=160 ctermfg=255
 
 inoremap {<CR> {<CR>}<C-o>O
 
-nnoremap tn :tabnew<Space>
-nnoremap tk :tabnext<CR>
-nnoremap tj :tabprev<CR>
-nnoremap th :tabfirst<CR>
-nnoremap tl :tablast<CR>
-
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
@@ -63,6 +57,12 @@ nnoremap <C-l> <C-w>l
 nnoremap gk :bn<CR>
 nnoremap gj :bp<CR>
 nnoremap gd :bd<CR>
+
+nnoremap bl :bnext<CR>
+nnoremap bh :bprevious<CR>
+nnoremap bc :bd<CR>
+nnoremap b! :bd!<CR>
+nnoremap bi :ls<CR>
 
 " Plugin Mappings
 nnoremap <Leader>n :NERDTreeTabsToggle<CR>
