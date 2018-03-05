@@ -6,7 +6,6 @@ execute pathogen#infect()
 
 " Basic settings
 
-set background=dark
 filetype plugin indent on
 syntax on
 
@@ -19,12 +18,14 @@ set showcmd
 set number
 set relativenumber
 set so=999 " fix cursor to centre of screen
+set textwidth=80
 
 set backspace=indent,eol,start
-set tabstop=4 
+" Hard tab indentation
+set tabstop=4
 set shiftwidth=4
-set softtabstop=4
-set expandtab
+set noexpandtab
+set softtabstop=0
 set autoindent
 
 " Airline
@@ -33,12 +34,16 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 set laststatus=2
 
-" YCM
+" Vimtex
+let g:vimtex_view_method = 'zathura'
 
-let g:loaded_youcompleteme=1
+" Syntastic
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall'
 
 " Aesthetics
 
+colorscheme tango2
 hi LineNr ctermfg=DarkGrey
 hi MatchParen cterm=none ctermbg=18 ctermfg=blue
 hi VertSplit ctermbg=236 ctermfg=236
@@ -58,11 +63,10 @@ nnoremap gk :bn<CR>
 nnoremap gj :bp<CR>
 nnoremap gd :bd<CR>
 
-nnoremap bl :bnext<CR>
-nnoremap bh :bprevious<CR>
+nnoremap L :bnext<CR>
+nnoremap H :bprevious<CR>
 nnoremap bc :bd<CR>
 nnoremap b! :bd!<CR>
-nnoremap bi :ls<CR>
 
 " Plugin Mappings
 nnoremap <Leader>n :NERDTreeTabsToggle<CR>
