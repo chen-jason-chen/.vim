@@ -18,14 +18,13 @@ set showcmd
 set number
 set relativenumber
 set so=999 " fix cursor to centre of screen
-set textwidth=80
+set textwidth=120
 
 set backspace=indent,eol,start
-" Hard tab indentation
+" 4 space indentation
 set tabstop=4
 set shiftwidth=4
-set noexpandtab
-set softtabstop=0
+set expandtab
 set autoindent
 
 " Airline
